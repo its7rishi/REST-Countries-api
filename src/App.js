@@ -61,7 +61,7 @@ function App() {
         setRegion={setRegion}
       />
       {isLoading && (
-        <div className='w-full h-full flex justify-center items-center'>
+        <div className='w-full h-full flex items-start justify-center md:items-center pt-10 md:pt-0'>
           <FadeLoader
             loading={isLoading}
             color={`${darkMode ? '#fff' : 'hsl(207, 26%, 17%)'}`}
