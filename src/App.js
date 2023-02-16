@@ -36,7 +36,6 @@ function App() {
   const handleInputSubmit = (e) => {
     e.preventDefault()
     setQueryText(searchTerm)
-    setSearchTerm('')
   }
 
   async function fetchAllData() {
