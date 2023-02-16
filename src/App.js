@@ -29,6 +29,10 @@ function App() {
     }
   }, [darkMode])
 
+  useEffect(() => {
+    setQueryText(searchTerm)
+  }, [searchTerm])
+
   const handleInputSubmit = (e) => {
     e.preventDefault()
     setQueryText(searchTerm)

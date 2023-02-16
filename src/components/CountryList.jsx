@@ -9,8 +9,8 @@ function CountryList({ list, queryText, region }) {
 
   let filteredList
   if (queryText) {
-    filteredList = list.filter(
-      (item) => item.name.common.toLowerCase() === queryText.toLowerCase()
+    filteredList = list.filter((item) =>
+      item.name.common.toLowerCase().includes(queryText.toLowerCase())
     )
   } else if (region !== '') {
     filteredList = list.filter((item) => item.region === region)

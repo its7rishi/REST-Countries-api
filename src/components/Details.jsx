@@ -78,7 +78,8 @@ function Details({ selectedCountry, setSelectedCountry, list }) {
       <div className='w-full h-full bg-transparent'>
         <button
           className='p-2 px-3 md:mt-4 ml-8 md:ml-24 shadow-md text-sm dark:text-white flex items-center justify-center space-x-2 bg-white dark:bg-darkModeDarkBlue rounded'
-          onClick={handleBackClick}>
+          onClick={handleBackClick}
+          autoFocus={true}>
           <BsArrowLeft />
           <span>Back</span>
         </button>
